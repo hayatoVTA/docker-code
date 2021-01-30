@@ -37,3 +37,8 @@ docker build -t [生成するイメージ名] .
 ```
 docker image ls
 ```
+
+### contaienr の起動
+
+```
+doc
