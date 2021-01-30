@@ -1,0 +1,19 @@
+# CentOSの上にApacheを乗せる
+
+# CentOS7 (base image)
+FROM centos:centos7
+
+# Install Apache and php or Nginx
+RUN yum -y install httpd php
+RUN apt-get update && apt-get install -y -q nginx
+
+# Copy to file
+COPY test.php /var/www/html/
+COPY index.html /sur/share/nginx/html/
+
+# Start up Apache server or Nginx server
+CMD ["/usr/sbin/httpd","-DFOREGROUND"]
+CMD [ "nginx", "-g", "deamon off;"]
+
+# 起動する時は "docker build -t 名前 ."
+# -t オプションはタグで、buildするimageに名前をつけるときに使う
