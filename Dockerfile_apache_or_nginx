@@ -16,4 +16,4 @@ CMD ["/usr/sbin/httpd","-DFOREGROUND"]
 CMD [ "nginx", "-g", "deamon off;"]
 
 # 起動する時は "docker build -t 名前 ."
-# -t オプションはタグで、buildするimageに名前をつけるときに使う
+# -tオプションはタグで、buildするimageに名前をつけるときに使う
