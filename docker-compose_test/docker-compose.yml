@@ -1,0 +1,5 @@
+version: "3"
+# サービス定義
+services:
+  webserver:
+    build: .
