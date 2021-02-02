@@ -1,0 +1,5 @@
+# プロジェクトを作成
+docker-compose run web django-admin.py startproject composeexample .
+
+# アプリを作成
+docker-compose run --rm web django-admin startapp composeexampleapp
