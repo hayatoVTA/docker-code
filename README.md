@@ -41,4 +41,5 @@ docker image ls
 ### contaienr の起動
 
 ```
-doc
+docker start [ container id ]
+```
