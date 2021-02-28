@@ -3,3 +3,9 @@ docker-compose run web django-admin.py startproject composeexample .
 
 # アプリを作成
 docker-compose run --rm web django-admin startapp composeexampleapp
+
+# マイグレート
+docker-compose run --rm web python manage.py migrate
+
+# マイグレーション
+docker-compose run --rm web python3 manage.py makemigrations
